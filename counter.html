@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="counter.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+        <div class="title">Counter</div>
+     <div id="countVal" class="showValue"></div>
+     <div class="buttons"><div style="margin-right: 35px;"> <button class="inc-btn" id="Inc-btn">Increase</button></div>
+     <div><button class="reset-btn" id="Reset-btn">Reset</button></div>
+     <div style="margin-left: 35px;"><button class="dec-btn" id="Dec-btn">Decrease</button></div></div>
+     
+
+      </div>
+      <script>
+        let count = 0;
+        const increaseBtn = document.getElementById('Inc-btn');
+        const decreaseBtn = document.getElementById('Dec-btn');
+        const showVal = document.getElementById('countVal');
+        const ResetBtn = document.getElementById('Reset-btn');
+
+        function IncCount(){
+         count++;
+         if(count > 0)
+   {showVal.innerHTML = count;
+    showVal.classList.remove('decreasing');
+    showVal.classList.remove('Reset');
+  showVal.classList.add('Increasing');
+}
+
+else if(count === 0){
+        showVal.classList.remove('decreasing');
+         showVal.classList.remove('Increasing');
+         showVal.classList.add('Reset');
+          showVal.innerHTML = 0; 
+       }
+  else{
+    showVal.innerHTML = count;
+  }
+        }
+
+        function DecCount(){
+          count--;
+         if(count < 0 )
+       {  showVal.innerHTML = count;
+        showVal.classList.remove('Increasing');
+        showVal.classList.remove('Reset');
+        showVal.classList.add('decreasing');
+       
+       }
+       else if(count === 0){
+        showVal.classList.remove('decreasing');
+         showVal.classList.remove('Increasing');
+         showVal.classList.add('Reset');
+          showVal.innerHTML = 0; 
+       }
+       else {
+        showVal.innerHTML = count;
+       }
+        }
+
+        function resetVal(){
+         count = 0;
+         if(count === 0)
+        { showVal.classList.remove('decreasing');
+         showVal.classList.remove('Increasing');
+         showVal.classList.add('Reset');
+          showVal.innerHTML = 0; }
+        }
+
+        increaseBtn.addEventListener('click',IncCount);
+        decreaseBtn.addEventListener('click',DecCount);
+        ResetBtn.addEventListener('click',resetVal);
+      </script>
+  </body>
+</html>

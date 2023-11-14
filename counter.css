@@ -1,0 +1,70 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:  420px;
+  margin-top: 100px;
+  height: 400px;
+  width: 500px;
+}
+.title{
+  font-size: 55px;
+  font-family: 'Poppins';
+  color: #8B4000;
+}
+.showValue{
+  height: 40px;
+  font-size: 35px;
+ font-family: 'Poppins';
+
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.inc-btn{
+ border-style: solid;
+ border-width: 2px;
+ border-radius: 5px;
+ border-color: #8B4000;
+ padding: 10px 20px;
+ font-family: 'Poppins';
+ color: #8B4000;
+}
+.reset-btn{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #8B4000;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  color: #8B4000;
+ }
+ .dec-btn{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #8B4000;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  color: #8B4000;
+ }
+
+ .inc-btn:hover,.dec-btn:hover,.reset-btn:hover{
+  background-color: #8B4000;
+  color: white;
+  cursor: pointer;
+ }
+.decreasing{
+  color: red;
+}
+.Reset{
+  color: navy;
+}
+
+.Increasing{
+  color: green;
+}
