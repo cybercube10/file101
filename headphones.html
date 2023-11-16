@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Apply some basic styles to the navigation bar */
+    nav {
+      background-color: #333; /* Set the background color */
+      color: #fff; /* Set the text color */
+      padding: 10px; /* Add some padding for spacing */
+      position: fixed;
+      z-index: 2;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style the navigation list */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: right;
+    }
+
+    /* Style the list items (menu options) */
+    li {
+      display: inline; /* Display list items horizontally */
+      margin-right: 60px; /* Add some spacing between items */
+      align-items: center;
+    }
+
+    /* Style the links */
+    a {
+      text-decoration: none; /* Remove underline from links */
+      color: #fff; /* Set link text color */
+    }
+
+    /* Change link color on hover */
+    a:hover , a:active {
+      color: #16F529 ; /* Change the color on hover */
+    }
+    .logo{
+     height: 30px;
+    }
+
+    .added{
+      font-size: 10px;position: absolute;margin-top: -35px;margin-left: 30px;background-color: red;border-radius: 50%;padding: 2px 8px ;
+    }
+   
+
+    .title{
+      text-align: center;
+      font-size: 50px;
+      margin-top: 120px;
+      margin-bottom: 40px;
+      
+    }
+
+
+    .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+<body style="font-family: 'Poppins';color: white;background-color: black;">
+  <nav>
+    <ul>
+      <li style="margin-right: 800px;"><img class="logo" src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"></li>
+      <li><a href="#home-section">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#contact-section"> Deals</a></li>
+      <li><a href="#FAQ-section">FAQ</a></li>
+     <div style="width: 40px;text-align: right;transform: translateX(3200%);"><div style="margin-top: -30px;position: relative;"><li ><img style="height: 20px;margin-right: -60px;margin-top: 10px;" src="https://cdn-icons-png.flaticon.com/128/9454/9454066.png"></li> </div> 
+     <div id="cart" ></div>
+    </div>
+      <!-- Add more navigation items with appropriate IDs -->
+    </ul>
+  </nav>
+
+  <!-- Sections to scroll to -->
+  <section id="home-section" style="height: 100vh; display: flex;flex-direction: row;justify-content: center;align-items: center;">
+   
+    <div  style="width: 50%;margin-right: 40px;height: 100vh;justify-content: center;align-items: center;display: flex;flex-direction: column;">
+    <div style="background-color: chartreuse;font-size: 80px;border-radius: 10px;">True Wireless</div>
+    <div style="font-family: 'Poppins', sans-serif;font-size: 60px;font-weight: bold;margin-left: -140px;">EARPHONES</div>
+    <div style="font-family: 'Poppins', sans-serif;font-size: 20px;font-weight: bold;margin-left: -400px;">Starting @&#x20B9;999</div>
+   <a target="_blank"  href="https://www.boat-lifestyle.com/collections/true-wireless-earbuds" > <button  style="font-family: 'Poppins', sans-serif;font-size: 15px;margin-left: -260px;margin-top: 20px;background-color: #16F529 ;border-radius: 80px;padding: 10px 5px;width: 130px;color: white;border: none;cursor: pointer;">Shop now <img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/128/591/591855.png"></button> </a>
+
+    </div>
+    <div style="width: 50%;height: 100vh;"><img style="width: 700px;margin-top: 40px;" src="https://www.boat-lifestyle.com/cdn/shop/files/img_1_desktop_4c81b094-8292-4d54-8b20-5eb3b823a4e6_1400x.png?v=1686650857"></div>
+  
+       </section>
+  <section id="about-section" style="height: 150vh;display: flex;flex-direction: column;">
+  <div style="height: 80vh;display: flex;flex-direction: row;justify-content: space-between;">
+  <div style="background-color: maroon;width: 50%;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+  
+    <div style="font-size: 40px;margin-top: 50px;color: white;z-index: 1;">Connected Every Moment</div>
+  <div style="margin-top: -10px;"><img style="height: 300px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner1-Product1_51f1ee8d-1008-4121-8280-cb54b2e0c316.png?v=1622018200"></div>
+
+  <div style="margin-left: 10px;font-size: 14px;">Never lose a second with seamless Bluetooth v5.0 and Insta’ Wake N' Pair, that connects your phone to your earbuds the moment they leave the charging case. Charge your TWS bluetooth earphones with Type C for great speed.
+
+   </div>
+  
+  </div>
+  <div style="background-color: #1A2024;width: 50%;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+  <div style="margin-left: 20px;font-size: 30px;font-weight: bold;margin-top: 55px;">boAt Signature Sound for music lovers</div>
+  <div style="margin-left: 20px;margin-top: 10px;">Where sound is everything. The most immersive music experience equipped with 13mm drivers that will transport you to another world.</div>
+  <div><img style="height: 380px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner2-product2_2f6bbbb9-a887-481b-b597-72cd0f94821c.png?v=1622018201"></div>
+  
+  
+  
+  </div>
+  </div>
+  <div style="height: 70vh;background-color: tomato;display: flex;flex-direction: row;">
+  
+    <div><img style="height: 450px;margin-left: 30px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner3-product2_7d453894-034a-41ee-a8b4-24ecccccb8e8.png?v=1622018201"></div>
+
+    <div style="display: flex;flex-direction: column;">
+    <div style="font-weight: bold;margin-top: 60px;font-size: 70px;">Featherweight for comfort all-day</div>
+    <div style="">Feel your music, never the weight of your earbuds. Wireless earbuds designed for ease and flexibility.</div>
+    </div>
+  
+  </div>
+  </section>
+  <section id="contact-section" style="height: 150vh; background-color: lightpink;display: flex;flex-direction: column;">
+  <div style="height: 50vh; background-color: black;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+  <div style="display: flex;flex-direction: column;"> <div style="margin-left: 50px;font-size: 50px;">boAt truly Yours</div>
+ <div style="margin-left: 20px;">THE NEXT</div>
+ <div style="margin-left: 50px;color: maroon;">BIG THING</div>
+</div>
+   
+    <div><img style="height: 300px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ENX.gif?v=1678779111"></div>
+  
+  </div>
+
+  <div style="background-color: #1A2024;height: 120vh;">
+  
+    <div style="display: flex;flex-direction: column;">
+    
+      <div style="height: 50vh; background-color: #1A2024;display: flex;flex-direction: row;justify-content: space-between;">
+      
+  <!---first earplug-->
+
+
+        <div style="width: 350px; height: 250px;margin-top: 10px;margin-left: 10px;border-radius: 20px;border-width: 2px;border-color: #1A2024;border: solid;display: flex;flex-direction: row;">
+      <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 12px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Nirvana_Ion.jpg?v=1697621745"></div>
+       <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Playback 120 hours</div>
+    </div>  
+        <div style="display: flex;flex-direction: column;">
+        
+        <div style="margin-top: 10px ;margin-left: 10px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png"> 5.0</div>
+        <div style="margin-left: 10px;">Nirvana Ion</div>
+        <div  style="margin-left: 10px;"> &#8377; 2999</div>
+        <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;"></div>
+        <div style="margin-left: 30px;margin-top: 80px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px;">Add to Cart</button></div>
+        
+        </div>
+        
+        </div>
+
+
+        <!---Second earplug-->
+
+
+
+        <div style="width: 350px;background-color: #1A2024;height: 250px;margin-top: 10px;border-radius: 20px;border-width: 2px;border-color: white;border: solid;display: flex;flex-direction: row;margin-left: 20px;">
+        
+            <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 12px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049"></div>
+             <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Playback 42 hours</div>
+          </div>  
+              <div style="display: flex;flex-direction: column;">
+              
+              <div style="margin-top: 10px ;margin-left: 10px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png"> 4.2</div>
+              <div style="margin-left: 10px;">Airdopes 131</div>
+              <div style="display: flex;flex-direction: row;">
+              <div  style="margin-left: 10px;"> &#8377; 849</div>
+              <div style="text-decoration: line-through;margin-left: 10px;" > &#8377;2990</div>
+              <div style="color: #16F529;margin-left: 5px;font-size: 12px;">72% off</div>
+            
+            </div>
+
+              <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;font-size: 2px;">a</div>
+              <div style="display: flex;flex-direction: row;justify-content: space-between;">
+              <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;">13 mm drivers</div>
+              <div style="color: white; font-size: 10px;background-color: #333 ;margin-right: 4px; margin-top: 10px;"> IWP technology</div>
+              </div>
+              <div style="margin-left: 30px;margin-top: 80px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px; margin-bottom: 15px;">Add to Cart</button></div>
+              
+              </div>
+        </div>
+
+
+         <!---third earplug-->
+        <div style="width: 350px;background-color: #1A2024;height: 250px;margin-top: 10px;margin-right: 10px;border-radius: 20px;border-width: 2px;border-color: white;border: solid;display: flex;flex-direction: row;">
+        
+          <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 8px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161_Pro_49947db5-298c-40c7-94bc-072faaa427a7.jpg?v=1689920938"></div>
+          <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Playback 50 hours</div>
+       </div>  
+           <div style="display: flex;flex-direction: column;">
+           
+           <div style="margin-top: 10px ;margin-left: 10px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png"> 4.2</div>
+           <div style="margin-left: 10px;">Airdopes 161 Pro</div>
+           <div style="display: flex;flex-direction: row;">
+           <div  style="margin-left: 10px;"> &#8377; 999</div>
+           <div style="text-decoration: line-through;margin-left: 10px;" > &#8377;4990</div>
+           <div style="color: #16F529;margin-left: 5px;font-size: 12px;">82% off</div>
+         
+         </div>
+
+           <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;"></div>
+           <div style="display: flex;flex-direction: row;justify-content: space-between;">
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;">Clear Calling</div>
+           <div style="color: white; font-size: 10px;background-color: #333 ;margin-right: 4px; margin-top: 10px;"> Bluetooth V5.3</div>
+           </div>
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;width: 100px;margin-left: 15px;">BEAST Mode<sup><b>Tm</b></sup></div>
+           <div style="margin-left: 30px;margin-top: 50px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px;">Add to Cart</button></div>
+           
+           </div>
+        
+        
+        </div>  
+      
+      
+      
+      
+      </div>
+
+      <!---second section-->
+
+      <div style="height: 50vh; background-color: #1A2024;display: flex;flex-direction: row;justify-content: space-between;">
+      
+            
+        <div style="width: 350px;background-color: #1A2024; height: 250px;margin-top: 10px;margin-left: 10px;border-radius: 20px;border-width: 2px;border-color: #1A2024;border: solid;display: flex;flex-direction: row;">
+        
+        
+          <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 8px;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Immortal_131.gif?v=1698386535"></div>
+          <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Gaming Earphones</div>
+       </div>  
+           <div style="display: flex;flex-direction: column;">
+           
+           <div style="margin-top: 10px ;margin-left: 10px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png"> 4.8</div>
+           <div style="margin-left: 10px;">Immortal 131</div>
+           <div style="display: flex;flex-direction: row;">
+           <div  style="margin-left: 10px;"> &#8377; 1099</div>
+           <div style="text-decoration: line-through;margin-left: 10px;" > &#8377;3490</div>
+           <div style="color: #16F529;margin-left: 5px;font-size: 12px;">69% off</div>
+         
+         </div>
+
+           <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;"></div>
+           <div style="display: flex;flex-direction: row;justify-content: space-between;">
+           <div style="color: white;font-size: 7px;background-color: #333;margin-left: 4px;margin-top: 10px;margin-right: 4px;">Upto 40 hours playback</div>
+           <div style="color: white; font-size: 10px;background-color: #333 ;margin-right: 4px; margin-top: 10px;"> ENx™ Technology</div>
+           </div>
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;width: 100px;margin-left: 15px;">BEAST Mode<sup><b>Tm</b></sup></div>
+           <div style="margin-left: 30px;margin-top: 50px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px;">Add to Cart</button></div>
+           
+           </div>
+        
+        </div>
+
+        <!--Second earplug-->
+        <div style="width: 350px;background-color: #1A2024;height: 250px;margin-top: 10px;border-radius: 20px;border-width: 2px;border-color: white;border: solid;display: flex;flex-direction: row;margin-left: 20px;">
+        
+        
+          <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 12px;position: relative;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161_Deadpool.jpg?v=1695622458"></div>
+          <div style="position: absolute;margin-top: 6px;font-size: 10px;background-color: black;border-radius: 10px;font-weight: bold;">New Launch🎉</div>
+          <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Limited Edition</div>
+       </div>  
+           <div style="display: flex;flex-direction: column;">
+           
+           <div style="margin-top: 10px ;margin-left: 10px;font-size: 12px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png">Be first to Review</div>
+           <div style="margin-left: 10px;">Airdopes 161 DeadPool..</div>
+           <div style="display: flex;flex-direction: row;">
+           <div  style="margin-left: 10px;"> &#8377; 999</div>
+           <div style="text-decoration: line-through;margin-left: 10px;" > &#8377;2490</div>
+           <div style="color: #16F529;margin-left: 5px;font-size: 12px;">60% off</div>
+         
+         </div>
+
+           <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;font-size: 2px;">a</div>
+           <div style="display: flex;flex-direction: row;justify-content: space-between;">
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;">ASAP™ Charge</div>
+           <div style="color: white; font-size: 10px;background-color: #333 ;margin-right: 4px; margin-top: 10px;">Type-C Interface</div>
+           </div>
+           <div style="margin-left: 30px;margin-top: 80px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px; margin-bottom: 15px;">Add to Cart</button></div>
+           
+           </div>
+
+        </div>
+
+<!--third earplug-->
+
+
+        <div style="width: 350px;background-color: #1A2024;height: 250px;margin-top: 10px;margin-right: 10px;border-radius: 20px;border-width: 2px;border-color: white;border: solid;display: flex;flex-direction: row;">
+        
+        
+          <div style="display: flex;flex-direction: column;"><div ><img style=" height: 200px;border-radius: 8px; position: relative;" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-Atom-83.jpg?v=1682576552"></div>
+          <div style="position: absolute;margin-top: 6px;background-color: black;font-weight: bold;font-size: 10px;border-radius: 12px;">Best Seller🚀</div>
+          <div style="background-color: yellow;height:100px ;border-radius: 0px 0px 13px 13px;text-align:center ;font-size: 14px;color: black;font-weight: bold;">Playback 40 hours</div>
+       </div>  
+           <div style="display: flex;flex-direction: column;">
+           
+           <div style="margin-top: 10px ;margin-left: 10px;"><img style="height: 15px;margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/128/616/616489.png"> 4.2</div>
+           <div style="margin-left: 10px;">Airdopes Atom 83</div>
+           <div style="display: flex;flex-direction: row;">
+           <div  style="margin-left: 10px;"> &#8377; 1499</div>
+           <div style="text-decoration: line-through;margin-left: 10px;" > &#8377;3490</div>
+           <div style="color: #16F529;margin-left: 5px;font-size: 12px;">47% off</div>
+         
+         </div>
+
+           <div style="width: 190px;height: 2px;background-color: white;margin-top: 20px;"></div>
+           <div style="display: flex;flex-direction: row;justify-content: space-between;">
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;">Clear Calling</div>
+           <div style="color: white; font-size: 10px;background-color: #333 ;margin-right: 4px; margin-top: 10px;"> Bluetooth V5.3</div>
+           </div>
+           <div style="color: white;font-size: 10px;background-color: #333;margin-left: 4px;margin-top: 10px;width: 100px;margin-left: 15px;">BEAST Mode<sup><b>Tm</b></sup></div>
+           <div style="margin-left: 30px;margin-top: 50px;"><button class="add-tocart-btn" style="padding: 10px 40px;background-color: darkcyan;border: none;color: white;border-radius: 15px;">Add to Cart</button></div>
+           
+           </div>
+        
+        </div>
+      
+      
+      </div>
+    
+    </div>
+  
+  
+  
+  </div>
+
+  
+  
+  </section>
+  <section id="FAQ-section" style="height: 100vh; background-color: black;">
+  
+  
+  <h1 class="title">FAQs </h1>
+   <div style="width: 50px;background-color: maroon;height: 4px;justify-content: center;margin-left: 50%;margin-top: -50px;"></div>
+
+   <div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-header">Question 1</div>
+        <div class="accordion-content">Answer 1</div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">Question 2</div>
+        <div class="accordion-content">Answer 2</div>
+    </div>
+    <!-- Add more items as needed -->
+</div>
+
+
+ 
+
+
+
+
+
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  <!-- Add more sections with unique IDs -->
+
+  <script>
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    const AddtoCartBtns = document.querySelectorAll('.add-tocart-btn');
+const qty = document.getElementById('cart');
+let count = 0;
+
+    AddtoCartBtns.forEach((button) => {
+     
+  button.addEventListener('click', () => {
+    if (count > 0) {
+      count++;
+      qty.innerHTML = count;
+    } else {
+      if (!qty.classList.contains('added')){
+      qty.classList.add('added'); }
+      count++;
+      qty.innerHTML = count;
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+
+        header.addEventListener('click', function () {
+            item.classList.toggle('active');
+            const content = item.querySelector('.accordion-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

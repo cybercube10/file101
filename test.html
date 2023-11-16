@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>btn</title>
+  <style>
+    .added{
+      font-size: 10px;position: absolute;margin-top: -35px;margin-left: 30px;background-color: red;border-radius: 50%;padding: 2px 8px ;
+    }
+  </style>
+</head>
+<body>
+  <button class="add-tocart-btn">+1</button>
+  <button class="add-tocart-btn">+1</button>
+  <div id="cart" ></div>
+  <script>
+ const AddtoCartBtns = document.querySelectorAll('.add-tocart-btn');
+const qty = document.getElementById('cart');
+let count = 0;
+
+AddtoCartBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (count > 0) {
+      count++;
+      qty.innerHTML = count;
+    } else {
+      if (!qty.classList.contains('added')) {
+        qty.classList.add('added');
+      }
+      count++;
+      qty.innerHTML = count;
+    }
+  });
+});
+
+</script>
+</body>
+
+</html>
